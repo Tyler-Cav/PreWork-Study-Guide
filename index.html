@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets\style.css">
     <title>Prework Study Guide</title>
   </head>
   <body>
@@ -12,7 +13,7 @@
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
     </header>
     <main>
-      <section class="card" id="html-section"></section>
+      <section class="card" id="html-section">
         <h2>HTML</h2>
         <ul>
           <li>The head element contains information about the webpage.</li>
@@ -28,15 +29,45 @@
       <section class="card" id="css-section">
         <h2>CSS</h2>
         <ul>
-          <li>insert CSS notes here</li>
-          <li>insert CSS notes here</li>
-        </ul>
+          <li><h4>Three Main CSS Styles</h4></li>
+            <ol>
+              <li>Inline CSS</li>
+                <ul>
+                  <li>When a developer wants to style an element directly in the HTML file</li>
+                  <li>Useful for quick and permanent changes but are less flexible than external and internal style sheets because each inline style must be edited individually whenever you make a design change.</li>
+                </ul>
+              <li>Internal CSS Style</li>
+                <ul>
+                  <li>CSS rules for the webpage in the head section of the HTML file.</li>
+                  <li>The rules only apply to that page, and you can configure CSS classes and IDs, which are used to identify elements, to style multiple elements in the page code.</li>
+                </ul>
+              <li>External CSS Style</li>
+                <ul>
+                  <li>Most common way to style a webpage.</li>
+                  <li>This is preferred in most cases because it allows   developers to keep all their CSS rules in a separate file, which makes design changes easier.</li>
+                  <li>Create a CSS file by going into your repo local files. Once in the correct location. Create by typing "touch style.css"</li>
+                </ul>
+              </ol>
+              <li>A margin indicates how much space we want around the outside of an element.</li>
+              <li>A padding indicates how much space we want around the content inside an element.</li>
+              <li>".insert-class-name" designates a class selector.</li>
+            </ul>
       </section>
       <section class="card" id="git-section">
         <h2>GIT</h2>
         <ul>
-          <li>insert GIT notes here</li>
-          <li>insert GIT notes here</li>
+          <li><h4>Github/Git Workflow Basics</h4></li>
+          <ol>
+            <li>Create branch from main. "Git checkout -b feature/name_of_branch"</li>
+            <li>Check "Git Status" to make sure you're within new branch.</li>
+            <li>Open using "code ." in terminal.</li>
+            <li>After making changes in VSCode stage updated files."Git add -A"</li>
+            <li>Commit changes to Github. "Git commit -m "commit_message_goes_here"</li>
+            <li>Before pushing update to Github, check if main is still up to date. "Git Pull Origin Main"</li>
+            <li>Once main is up to date. Push current branch to GitHub. "Git Push Origin "name of branch".</li>
+              <ul><li>Best practice to label branch as Feature/Branch_description</li></ul>
+            <li>Check GitHub Repo with uploaded new branch. Create a pull request to then review/merge new code</li>
+          </ol>
         </ul>
       </section>
 
